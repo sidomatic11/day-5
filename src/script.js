@@ -86,7 +86,7 @@ for (let i = 0; i < count; i++) {
 	const size = i + 1;
 	const geometry = new THREE.PlaneGeometry(size, size);
 	const material = new THREE.MeshBasicMaterial({
-		map: drawTexture(100 - i * 5),
+		map: drawTexture(100 - i * 5), //passing lightness
 		side: THREE.DoubleSide,
 		transparent: true,
 		opacity: 1 - i / count,
